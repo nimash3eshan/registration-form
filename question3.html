@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <style>
+        body{
+            font-size: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container {
+            width: 700px;
+            margin: 60px auto;
+            padding: 24px;
+            border: 5px solid #728eb3;
+            border-radius: 32px;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            color: #444;
+            background-color: #F0F0F0;
+            box-shadow: 0 0 20px 0 black;
+        }
+        button{
+            font-size: 20px;
+            padding: 2px 10px;
+            margin-bottom: 10px;
+            background-color: lightblue;
+            border-radius: 5px;
+        }
+        button:hover{
+            background-color: rgb(46, 110, 131);
+            color: white;
+        }
+        input{
+            font-size: 20px;
+            padding: 10px 50px;
+        }
+    </style>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 03</title>
+
+    <script type="text/javascript">
+
+        function appendText() {
+            x=document.getElementById('display');
+            y=document.getElementById('tx');
+            x.innerHTML=x.innerHTML +" "+ y.value; // I inserted "" because display will everytime show inside the container 
+        }//end of appendText()
+
+        function deleteText() {
+            // find the paragraph with an ID of 'example1'
+            x=document.getElementById('display');
+            //Make the innerHTML blank
+            x.innerHTML="";
+        }//end of deleteText()
+
+    </script>
+</head>
+<body>
+    <div class="container">
+        <p id="display">Hi Nimal How are you?</p>
+        <div>
+            <button id="append" onclick="appendText()">Append Text</button>
+        </div>
+        <div>
+            <button id="delete" onclick="deleteText()">Delete Text</button>
+        </div>
+        <input type="text" id="tx" value="How are you?"/>
+    </div>
+</body>
+</html>
