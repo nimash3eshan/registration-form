@@ -1,2 +1,2 @@
 # registration-form
-Assignment JavaScript
+Assignment JavaScript - web-technology
